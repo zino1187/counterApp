@@ -9,10 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var num:Int=0
+    
+    @IBOutlet weak var la_num: UILabel!
+    
+    @IBAction func startCount(_ sender: Any) {
+        num += 1
+        
+        la_num.text = String(num)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
     }
 
 
